@@ -24,8 +24,8 @@ public class Guesser {
 	// Write the constructor below this line.
 
 	public Guesser(int i, int j) {
-		this.low = 0;
-		this.high = 1000;
+		i = 0;
+		j = 1000;
 
 	}
 
