@@ -11,6 +11,10 @@ import java.util.Scanner;
 public class Guesser {
 	private int low;
 	private int high;
+	
+	public String toString(){
+		  return "low: " + this.low + " high: " + this.high;
+	}
 
 	/*
 	 * Task 1. Write code here for a constructor which takes two int arguments and
@@ -23,11 +27,11 @@ public class Guesser {
 
 	// Write the constructor below this line.
 
-	public Guesser(int i, int j) {
-		i = 0;
-		j = 1000;
-
+	public Guesser(int low, int high) {
+		this.low = low;
+		this.high = high;
 	}
+
 
 	/*
 	 * Task 2. Complete the start() method, so that in the method body, you call
@@ -100,5 +104,5 @@ public class Guesser {
 	private void answer(int guess, int numberOfGuesses) {
 		System.out.println("You were thinking about " + guess + " (took me " + numberOfGuesses + " guesses)");
 	}
-
-}
+	
+		}
